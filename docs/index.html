@@ -7,8 +7,13 @@
     <title>HW3 - Anthony Tobias</title>
     <style>
         .header{
+            display: flex;
             background-color: gray;
-            height: 20%;
+            height: 100px;
+            width: 100%;
+        }
+        .links{
+            text-align: right;
         }
         .content{
             display: flex;
@@ -21,33 +26,56 @@
             background-color: aqua;
             flex: 0 1 70%;
         }
+        .name{
+            text-align: center;
+        }
 
     </style>
 </head>
 <body>
-    <div class="header">This is my header</div>
+    <div class="header">
+        <p>
+            <img src="zagLogo.jpg" alt="Gonzaga University Logo" height="100" width="120">
+        </p>
+        <div class="links">
+            <p>
+                <a href="#career">Career Summary</a>
+            </p>
+            <p>
+                <a href="#education">Education & Qualifications</a>
+            </p>
+            <p>
+                <a href="#interests">Interests & Hobbies</a>
+            </p>
+        </div>
+    </div>
     <div class="content">
-        <nav>This is my introduction</nav>
+        <nav>
+            <p>
+                <img src="Headshot.jpg" alt="Anthony Tobias photo">
+            </p>
+            <h1 class="name">Anthony Tobias</h1>
+            <p>My name is Anthony Tobias. I attend Gonzaga University as a computer science student. This is my senior year and I am eager to get some professional experience as I start my career.</p>
+        </nav>
         <main>
             This is my main
-            <section>
+            <section id="career">
                 <h1>
                     Career Summary
                 </h1>
             </section>
             
-            <section>
+            <section id="education">
                 <h1>
                     Education & Qualifications
                 </h1>
             </section>
 
-            <section>
+            <section id="interests">
                 <h1>
                     Interests & Hobbies
                 </h1>
             </section>
-            
         </main>
     </div>
     
