@@ -32,9 +32,13 @@
         .name{
             text-align: center;
         }
-
+        h1{
+            text-align: center;
+        }
+    
     </style>
 </head>
+
 <body>
     <div class="header">
         <p>
@@ -52,7 +56,10 @@
             </p>
         </div>
     </div>
+
+    <!--All the content within this website-->
     <div class="content">
+        <!--Nav tag contains the intro and summary and picture-->
         <nav>
             <p>
                 <img src="Headshot.jpg" alt="Anthony Tobias photo">
@@ -75,23 +82,196 @@
                 </ul>
             </p>
         </nav>
+
+        <!--Main tag that contains lots of the websites content-->
         <main>
             <section id="career">
                 <h1>
                     Career Summary
                 </h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Job Title
+                            </th>
+                            <th>
+                                Company
+                            </th>
+                            <th>
+                                Start Date
+                            </th>
+                            <th>
+                                End Date
+                            </th>
+                            <th>
+                                Roles & Responsibilities
+                            </th>
+                        </tr>
+                    </thead>
+                    <!--Table data-->
+                    <tbody>
+            
+                        <!--Intern row-->
+                        <tr>
+                            <td>IT and Specialized Assurance Intern</td>
+                            <td>Deloitte</td>
+                            <td>June 2022</td>
+                            <td>August 2022</td>
+                            <td>
+                                <!--Unordered list for the Roles & Responsibilities-->
+                                <ul>
+                                    <li>Inspected accounting systems and controls for improvement opportunities</li>
+                                    <li>Leveraged company methodologies to help clients improve their information technology controls or technology risk management programs</li>
+                                    <li>Participated in the development or execution of internal audit strategic plans</li>
+                                </ul>
+                            </td>
+            
+                            <!--Art Gallery row-->
+                        </tr>
+                            <td>Art Gallery Attendant</td>
+                            <td>Jundt Art Museum</td>
+                            <td>September 2019</td>
+                            <td>N/A</td>
+                            <td>
+                                <ul>
+                                    <li>Provide customer service to atendees</li>
+                                    <li>Provide assistance to customers over the phone</li>
+                                    <li>Maintain order and safety within the art gallery</li>
+                                </ul>
+                            </td>
+            
+                        <!--Golf course row-->
+                        <tr>
+                            <td>Golf Outside Services</td>
+                            <td>The Cedars on Salmon Creek</td>
+                            <td>May 2017</td>
+                            <td>July 2019</td>
+                            <td>
+                                <ul>
+                                    <li>Provide customer service to golfers</li>
+                                    <li>Maintained and repaired golf carts</li>
+                                    <li>Use machinery to retrieve golf balls from driving range</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        
+                        <!--Landscaper row-->
+                        <tr>
+                            <td>Landscaper & Airplane Detailer</td>
+                            <td>Self Employed</td>
+                            <td>May 2016</td>
+                            <td>August 2019</td>
+                            <td>
+                                <ul>
+                                    <li>Provided lawn care</li>
+                                    <li>Removed debris from yard including tree branches and leaves</li>
+                                    <li>Remove unwanted plants from yard</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             
             <section id="education">
                 <h1>
                     Education & Qualifications
                 </h1>
+                <table>
+                    <!--Table header-->
+                    <thead>
+                        <tr>
+                            <th>
+                                School
+                            </th>
+                            <th>
+                                Major
+                            </th>
+                            <th>
+                                Minor
+                            </th>
+                            <th>
+                                Concentration
+                            </th>
+                            <th>
+                                Start Date
+                            </th>
+                            <th>
+                                End Date
+                            </th>
+                        </tr>
+                    </thead>
+                    <!--Table data for Education-->
+                    <tbody>
+                        <tr>
+                            <td>Gonzaga University</td>
+                            <td>Computer Science</td>
+                            <td>Applied Mathematics</td>
+                            <td>N/A</td>
+                            <td>August 2019</td>
+                            <td>May 2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <table>
+                    <caption>Relevant classes taken</caption>
+                    <h1>Qualifications</h1>
+        
+                    <!--Table headers-->
+                    <thead>
+                        <tr>
+                            <th>
+                                Course Number
+                            </th>
+                            <th>
+                                Class Name
+                            </th>
+                            <th>
+                                Language
+                            </th>
+                        </tr>
+                    </thead>
+        
+                    <!--Table Data-->
+                    <tbody>
+                        <tr>
+                            <td>CPSC 224</td>
+                            <td>Software Development</td>
+                            <td>Java</td>
+                        </tr>
+                        <tr>
+                            <td>CPSC 332</td>
+                            <td>Web Development</td>
+                            <td>HTML</td>
+                        </tr>
+                        <tr>
+                            <td>CPSC 322</td>
+                            <td>Data Science & Algorithms</td>
+                            <td>Python</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
             <section id="interests">
                 <h1>
                     Interests & Hobbies
                 </h1>
+                <ol>
+                    <!--Picture with size 25x30 and a link to the official PGA tour website-->
+                    <li>Golf <a href="https://www.pgatour.com/"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhockley.com%2Fwp-content%2Fuploads%2F2021%2F04%2FCOVIDscreeningbutton.jpg&f=1&nofb=1" 
+                        alt="golf" height="25" width="30"></a></li>
+                    <li>Poker</li>
+                    <li>Video games</li>
+                    <li>Weight Lifting</li>
+                    <li>Watching sports (mainly football and basketball)</li>
+                    <li>Playing intramurals</li>
+                    <li>Music</li>
+                    <li>Cooking</li>
+                </ol>
             </section>
         </main>
     </div>
