@@ -12,7 +12,7 @@
         .header{
             display: flex;
             background-color: gray;
-            height: 100px;
+            height: 120px;
             width: 100%;
         }
         .links{
@@ -35,6 +35,38 @@
         h1{
             text-align: center;
         }
+        h2{
+            text-align: center;
+        }
+        .headshot{
+            margin: 10px auto 20px;
+            display: block;
+        }
+        .coreskills{
+            text-align: center;
+        }
+
+        ul{
+            text-align: center;
+        }
+
+        table,
+        th,
+        td{
+            border: 3px solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        tr:nth-child(odd) {background-color: gray;}
+        tr:nth-child(even) {background-color: lightgray;}
+        
+
+        .logo{
+            float:left;
+            margin: 10px;
+        }
     
     </style>
 </head>
@@ -42,7 +74,7 @@
 <body>
     <div class="header">
         <p>
-            <img src="zagLogo.jpg" alt="Gonzaga University Logo" height="100" width="120">
+            <img src="zagLogo.jpg" alt="Gonzaga University Logo" height="100" width="120" class="logo">
         </p>
         <div class="links">
             <p>
@@ -62,29 +94,32 @@
         <!--Nav tag contains the intro and summary and picture-->
         <nav>
             <p>
-                <img src="Headshot.jpg" alt="Anthony Tobias photo">
+                <img src="Headshot.jpg" alt="Anthony Tobias photo" class="headshot">
             </p>
             <h1 class="name">Anthony Tobias</h1>
             <p>My name is Anthony Tobias. I attend Gonzaga University as a computer science student. This is my senior year and I am eager to get some professional experience as I start my career.</p>
-            <p>
-                <h2>Core Skills</h2>
-            </p>
-            <!--List of skills-->
-            <p>
-                <ul>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>Git/GitHub</li>
-                    <li>C++</li>
-                    <li>Technical writing</li>
-                    <li>Communication</li>
-                    <li>Customer Service</li>
-                </ul>
-            </p>
         </nav>
 
         <!--Main tag that contains lots of the websites content-->
         <main>
+            <section id="coreskills" class="coreskills">
+                <p>
+                    <h2>Core Skills</h2>
+                </p>
+                <!--List of skills-->
+                <p>
+                    <ul class="coreskills">
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>Git/GitHub</li>
+                        <li>C++</li>
+                        <li>Technical writing</li>
+                        <li>Communication</li>
+                        <li>Customer Service</li>
+                    </ul>
+                </p>
+            </section>
+
             <section id="career">
                 <h1>
                     Career Summary
