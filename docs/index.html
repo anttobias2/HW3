@@ -22,8 +22,7 @@
             display: flex;
         }
         nav{
-            flex: 0 1 30%;
-            background-color: greenyellow
+            align-items: right;
         }
         main{
             background-color: aqua;
@@ -43,11 +42,17 @@
             display: block;
         }
         .coreskills{
-            text-align: center;
+            width:200px;
+            margin:0 auto;
+            list-style-type: circle;
         }
-
-        ul{
-            text-align: center;
+        ol{
+            width:200px;
+            margin:0 auto;
+        }
+        .intro{
+            flex: 0 1 30%;
+            background-color: greenyellow
         }
 
         table,
@@ -72,7 +77,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <nav class="header">
         <p>
             <img src="zagLogo.jpg" alt="Gonzaga University Logo" height="100" width="120" class="logo">
         </p>
@@ -87,21 +92,23 @@
                 <a href="#interests">Interests & Hobbies</a>
             </p>
         </div>
-    </div>
+    </nav>
 
     <!--All the content within this website-->
     <div class="content">
-        <!--Nav tag contains the intro and summary and picture-->
-        <nav>
+        <section class="intro">
             <p>
                 <img src="Headshot.jpg" alt="Anthony Tobias photo" class="headshot">
             </p>
             <h1 class="name">Anthony Tobias</h1>
+            <h2>Computer Science Student</h2>
             <p>My name is Anthony Tobias. I attend Gonzaga University as a computer science student. This is my senior year and I am eager to get some professional experience as I start my career.</p>
-        </nav>
+        </section>
+        <!--Nav tag contains the intro and summary and picture-->
+        <main class="body" >
+            
 
         <!--Main tag that contains lots of the websites content-->
-        <main>
             <section id="coreskills" class="coreskills">
                 <p>
                     <h2>Core Skills</h2>
@@ -147,6 +154,20 @@
                     <!--Table data-->
                     <tbody>
             
+                        <!--Art Gallery row-->
+                        <tr>
+                        <td>Art Gallery Attendant</td>
+                        <td>Jundt Art Museum</td>
+                        <td>September 2019</td>
+                        <td>N/A</td>
+                        <td>
+                            <ul>
+                                <li>Provide customer service to atendees</li>
+                                <li>Provide assistance to customers over the phone</li>
+                                <li>Maintain order and safety within the art gallery</li>
+                            </ul>
+                        </td>
+                        </tr>
                         <!--Intern row-->
                         <tr>
                             <td>IT and Specialized Assurance Intern</td>
@@ -159,20 +180,6 @@
                                     <li>Inspected accounting systems and controls for improvement opportunities</li>
                                     <li>Leveraged company methodologies to help clients improve their information technology controls or technology risk management programs</li>
                                     <li>Participated in the development or execution of internal audit strategic plans</li>
-                                </ul>
-                            </td>
-            
-                            <!--Art Gallery row-->
-                        </tr>
-                            <td>Art Gallery Attendant</td>
-                            <td>Jundt Art Museum</td>
-                            <td>September 2019</td>
-                            <td>N/A</td>
-                            <td>
-                                <ul>
-                                    <li>Provide customer service to atendees</li>
-                                    <li>Provide assistance to customers over the phone</li>
-                                    <li>Maintain order and safety within the art gallery</li>
                                 </ul>
                             </td>
             
@@ -196,7 +203,7 @@
                             <td>Landscaper & Airplane Detailer</td>
                             <td>Self Employed</td>
                             <td>May 2016</td>
-                            <td>August 2019</td>
+                            <td>July 2019</td>
                             <td>
                                 <ul>
                                     <li>Provided lawn care</li>
@@ -250,11 +257,9 @@
                     </tbody>
                 </table>
 
-
+                <h1>Qualifications</h1>
                 <table>
                     <caption>Relevant classes taken</caption>
-                    <h1>Qualifications</h1>
-        
                     <!--Table headers-->
                     <thead>
                         <tr>
