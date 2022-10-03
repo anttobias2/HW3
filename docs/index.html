@@ -19,11 +19,12 @@ Last Modified: 10/2/2022
         .header{
             display: flex;
             background-color: lightgray;
-            height: 120px;
+            height: 150px;
             width: 100%;
+            justify-content: space-between;
         }
         .links{
-            text-align: center;
+            margin: 10px;
         }
         .content{
             display: flex;
@@ -72,7 +73,6 @@ Last Modified: 10/2/2022
         tr:nth-child(even) {background-color: lightgray;}
 
         .logo{
-            float:left;
             margin: 10px;
             height: 100px;
             width: 120px;
@@ -82,9 +82,11 @@ Last Modified: 10/2/2022
 
 <body>
     <nav class="header">
-        <p>
-            <img src="zagLogo.jpg" alt="Gonzaga University Logo" class="logo">
-        </p>
+        <div class="logo">
+            <p>
+                <img src="zagLogo.jpg" alt="Gonzaga University Logo" style="height: 100px; width: 120px;">
+            </p>
+        </div>
         <div class="links">
             <p>
                 <a href="#career">Career Summary</a>
