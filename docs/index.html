@@ -2,7 +2,8 @@
 Name: Anthony Tobias
 Class: CPSC332
 Assignment: HW3
-Last Modified: 10/2/2022
+Last Modified: 10/3/2022
+The only inline style that I used was in the Career Summary table
 -->
 
 <!DOCTYPE html>
@@ -35,6 +36,9 @@ Last Modified: 10/2/2022
         }
         .name{
             text-align: center;
+        }
+        .summary{
+            margin: 15px
         }
         h1{
             text-align: center;
@@ -81,10 +85,11 @@ Last Modified: 10/2/2022
 </head>
 
 <body>
+    <!--Here is my header that contains logo and links-->
     <nav class="header">
-        <div class="logo">
+        <div>
             <p>
-                <img src="zagLogo.jpg" alt="Gonzaga University Logo" style="height: 100px; width: 120px;">
+                <img src="zagLogo.jpg" alt="Gonzaga University Logo" class="logo">
             </p>
         </div>
         <div class="links">
@@ -108,12 +113,10 @@ Last Modified: 10/2/2022
             </p>
             <h1 class="name">Anthony Tobias</h1>
             <h2>Computer Science Student</h2>
-            <p>My name is Anthony Tobias. I attend Gonzaga University as a computer science student. This is my senior year and I am eager to get some professional experience as I start my career.</p>
+            <p class="summary">My name is Anthony Tobias. I attend Gonzaga University as a computer science student. This is my senior year and I am eager to get some professional experience as I start my career.</p>
         </section>
-        <!--Nav tag contains the intro and summary and picture-->
-        <main class="body" >
-            
 
+        <main class="body" >
         <!--Main tag that contains lots of the websites content-->
             <section id="coreskills" class="coreskills">
                 <p>
@@ -137,6 +140,7 @@ Last Modified: 10/2/2022
                 <h1>
                     Career Summary
                 </h1>
+                <!--Inline style used here to make the margin 10px rather than auto like the other tables-->
                 <table style="margin: 10px;">
                     <thead>
                         <tr>
@@ -224,7 +228,7 @@ Last Modified: 10/2/2022
             
             <section id="education">
                 <h1>
-                    Education & Qualifications
+                    Education
                 </h1>
                 <table>
                     <!--Table header-->
